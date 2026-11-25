@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+    <FileVersion major="1" minor="6" />
+    <Project>
+        <Option title="StockWatchApi" />
+        <Option compiler="gcc" />
+        <Build>
+            <Target title="Release">
+                <Option output="bin/StockWatchApi.exe" prefix_auto="0" extension_auto="0" />
+                <Option working_dir="." />
+                <Option object_output="obj/StockWatchApi" />
+                <Option type="1" />
+                <Option compiler="gcc" />
+            </Target>
+        </Build>
+        <Compiler>
+            <Add option="-std=c++17" />
+            <Add option="-Wall" />
+            <Add option="-Wextra" />
+            <Add option="-finput-charset=UTF-8" />
+            <Add directory="third_party" />
+        </Compiler>
+        <Linker>
+            <Add option="-static" />
+            <Add library="winhttp" />
+            <Add library="ws2_32" />
+        </Linker>
+        <Unit filename="src/chart_periods.hpp" />
+        <Unit filename="src/server.cpp">
+            <Option compiler="gcc" use="1" buildCommand="$compiler $options $includes -std=c++17 -c $file -o $object" />
+        </Unit>
+        <Unit filename="src/http.cpp">
+            <Option compiler="gcc" use="1" buildCommand="$compiler $options $includes -std=c++17 -c $file -o $object" />
+        </Unit>
+        <Unit filename="src/http.hpp" />
+        <Unit filename="src/market.cpp">
+            <Option compiler="gcc" use="1" buildCommand="$compiler $options $includes -std=c++17 -c $file -o $object" />
+        </Unit>
+        <Unit filename="src/market.hpp" />
+        <Unit filename="src/directory.cpp">
+            <Option compiler="gcc" use="1" buildCommand="$compiler $options $includes -std=c++17 -c $file -o $object" />
+        </Unit>
+        <Unit filename="src/directory.hpp" />
+        <Unit filename="data/idx-catalog.json" />
+        <Unit filename="data/ihsg.json" />
+        <Extensions />
+    </Project>
+</CodeBlocks_project_file>

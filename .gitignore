@@ -1,0 +1,11 @@
+bin/
+obj/
+*.layout
+*.depend
+stockwatch-data.json
+stockwatch-demo.json
+stockwatch-*.json.tmp
+pantau-data.json
+pantau-demo.json
+pantau-*.json.tmp
+data/ihsg.json.tmp
